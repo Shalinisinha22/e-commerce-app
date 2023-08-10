@@ -1,0 +1,28 @@
+.login-cont{
+   margin-top: 2rem;
+   display:flex;
+   align-items: center;
+   flex-direction: column;
+    padding:0 1rem;
+    
+
+   
+ 
+}
+.login-cont::-webkit-scrollbar {
+  display: none;
+}
+.login-form{
+  
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.4rem ;
+}
+
+@media only screen and (max-width:600px){
+  .login-cont{
+    
+   margin-bottom: 2rem;
+  }
+}

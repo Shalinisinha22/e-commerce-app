@@ -1,0 +1,23 @@
+.price-container{
+     display: flex;
+     justify-content: center;
+    padding-right: 1rem;
+    margin-bottom: 7rem;
+  
+
+}
+/* .containers{
+    margin-top: 6rem;
+} */
+.itemQuantity{
+   /* background-color: aqua !important; */
+   position:absolute;
+   right:10rem
+}
+@media screen and (max-width:600px){
+    .itemQuantity{
+        position:absolute;
+        right:1rem;
+    } 
+   
+}

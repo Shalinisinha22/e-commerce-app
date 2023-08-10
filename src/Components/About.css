@@ -1,0 +1,29 @@
+.about-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:1rem 3rem;
+    /* margin-top:6rem */
+  
+}
+.about-container > *{
+    font-family: Lemonada;
+   
+
+}
+ p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.about-content{
+    text-align: center;
+}
+h3{
+   font-weight: bold;
+   font-size: 1.5rem;
+}
+@media screen and (max-width:600px){
+    .about-container{
+        margin-bottom: 8rem;
+    }
+}

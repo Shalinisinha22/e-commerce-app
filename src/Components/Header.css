@@ -1,0 +1,96 @@
+/* .header{
+    position: -webkit-sticky;
+    top:0
+} */
+.menu-bar{
+    height:100vh;
+    width:18rem;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: rgb(54, 52, 52) !important;
+    z-index: 1000 ;
+    position: fixed;
+    overflow: auto;
+}
+.menu-bar::-webkit-scrollbar {
+    display: none;
+  }
+.menu-bar.active{
+    opacity:1;
+    visibility: visible;
+    transform: translateX(0%);
+    transition: 0.5s ease;
+    /* transition: 2s ease; */
+}
+.menu-bar.inactive{
+    opacity:0;
+    visibility:hidden;
+    /* transform: translateX(-20px);
+    transition: 2s ease; */
+    transform: translateX(-100%);
+    transition: 0.3s;
+}
+
+.user-image{
+    height:7.5rem;
+    width:100%;
+    background-color: orangered;
+    display:flex;
+    align-items: center;
+   padding:0 1rem
+}
+.about-user > *
+{
+    font-size: 1rem;
+    margin-left: 1rem;
+    color:white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.user-list  .item{
+    height:3rem;
+    width:100%;
+    background-color: rgb(54, 52, 52);
+    /* margin-bottom: 0.5rem; */
+    display:flex;
+    justify-content: space-between;
+    padding:0 0.8rem;
+    align-items: center;
+    color:white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    cursor:pointer;   
+}
+
+.active-item{
+    background-color: black !important;
+}
+.user-list  .item > *{
+    font-size: 0.85rem;
+}
+.user-list .item:hover{
+    background-color:black;
+}
+.subitem > .item{
+  padding-left:1.2rem;
+  padding-right: 0.5rem;
+
+}
+
+@media screen and (max-width:600px){
+    .menu-bar{
+        width:12rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

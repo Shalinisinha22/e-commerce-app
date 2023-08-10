@@ -13,26 +13,53 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+*{
+  box-sizing: border-box;
+}
+body{
+  margin:0;
+  padding: 0;
+  font-style: "poppins" sans-serif;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
-.App-link {
-  color: #61dafb;
+
+body::-webkit-scrollbar {
+  background-color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+body::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}
+form > *{
+  margin-bottom: 1rem;
+}
+
+
+@media screen and (max-width:320px){
+   .company-logo{
+    height:2rem;
+    width:1.5rem;
+   }
+}
+@media screen and (max-width:500px){
+  .company-logo{
+   height:2.5rem;
+   width:2.5rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+
+.call-btn-cont{
+  position: absolute;
+  right:-2.5rem;
+  top:50%;
+  position: fixed;
+  transform: rotate(-90deg );
+}
+.call-btn-cont .btn{
+  border-radius: 2rem;
+  background-color: #eb2f06;
 }

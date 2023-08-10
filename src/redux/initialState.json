@@ -1,0 +1,13 @@
+
+    {
+
+      "auth":{
+        "loading":false,
+        "error":""
+    },
+
+       "currItem":null,
+       "wishlist":[],
+       "cart":[]
+     }
+
